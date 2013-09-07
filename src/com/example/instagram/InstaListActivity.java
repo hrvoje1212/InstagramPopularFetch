@@ -14,16 +14,16 @@ public class InstaListActivity extends ListActivity {
 
 	public static String ARRAY_LIST_IMAGES = "array_list_images";
 	
-	private ArrayList<InstaImage> images;
+	private ArrayList<CustomImage> images;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_insta_list);
 		
-		images = (ArrayList<InstaImage>) getIntent().getSerializableExtra(ARRAY_LIST_IMAGES);
+		images = (ArrayList<CustomImage>) getIntent().getSerializableExtra(ARRAY_LIST_IMAGES);
 		
-		for (InstaImage instaImage : images) {
+		for (CustomImage instaImage : images) {
 			System.out.println(instaImage);
 		}
 		

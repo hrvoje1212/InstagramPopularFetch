@@ -12,16 +12,16 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.instagram.InstaImage;
+import com.example.instagram.CustomImage;
 import com.example.instagram.R;
 
 public class InstaListAdapter extends BaseAdapter {
 
 	private final LayoutInflater layoutInflater;
 	public ImageLoader imageLoader;
-	private ArrayList<InstaImage> images;
+	private ArrayList<CustomImage> images;
 
-	public InstaListAdapter(Activity activity, ArrayList<InstaImage> images) {
+	public InstaListAdapter(Activity activity, ArrayList<CustomImage> images) {
 
 		this.images = images;
 		this.layoutInflater = (LayoutInflater)activity.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
